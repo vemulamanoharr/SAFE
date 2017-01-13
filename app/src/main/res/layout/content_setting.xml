@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/mains"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="shsu.manohar.safe.setting"
+    tools:showIn="@layout/activity_setting">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SETTINGS"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        android:textSize="30dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sulphite level:"
+        android:id="@+id/Levels"
+        android:autoText="false"
+        android:background="#ffffff"
+        android:textSize="30dp"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Levels"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:layout_above="@+id/textView4"
+        android:id="@+id/Levelradio">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strict"
+            android:id="@+id/strict"
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#04a50c"
+            android:enabled="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trace"
+            android:id="@+id/trace"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:background="#04a50c" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:background="#ffffff"
+        android:textSize="30dp"
+        android:id="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State:"
+        android:id="@+id/textView3"
+        android:layout_marginTop="57dp"
+        android:background="#ffffff"
+        android:textSize="30dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/Levels" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/Save"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:background="#ffffff"
+        android:textSize="25dp"
+        android:onClick="save"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/state"
+        android:background="#04a50c"
+        android:hint="TX"
+        android:textSize="30dp"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignEnd="@+id/textView2" />
+
+</RelativeLayout>

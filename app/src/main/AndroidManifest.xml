@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="shsu.manohar.safe">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".help"
+            android:label="@string/title_activity_help"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="shsu.manohar.safe.help" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".setting"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="shsu.manohar.safe.setting" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".disclaimer"
+            android:label="@string/title_activity_disclaimer"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="shsu.manohar.safe.disclaimer" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Search"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="shsu.manohar.safe.search" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".type_search"
+            android:label="@string/title_activity_type_search"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="shsu.manohar.safe.type_search" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".name_search"
+            android:label="@string/title_activity_name_search"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="shsu.manohar.safe.name_search" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

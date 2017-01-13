@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SAFE</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_help">help</string>
+    <string name="title_activity_help1">help1</string>
+    <string name="title_activity_setting">setting</string>
+    <string name="title_activity_disclaimer">disclaimer</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_type_search">type_search</string>
+    <string name="title_activity_name_search">name_search</string>
+</resources>
